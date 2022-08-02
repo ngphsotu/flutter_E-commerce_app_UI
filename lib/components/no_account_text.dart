@@ -1,13 +1,10 @@
-import 'package:e_commerce_app/screens/sign_up/sign_up_screen.dart';
-
 import '/constants.dart';
 import '/size_config.dart';
 import 'package:flutter/material.dart';
+import '/screens/sign_up/sign_up_screen.dart';
 
 class NoAccountText extends StatelessWidget {
-  const NoAccountText({
-    Key? key,
-  }) : super(key: key);
+  const NoAccountText({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,14 +15,14 @@ class NoAccountText extends StatelessWidget {
           'Don\'t have an account?',
           style: TextStyle(fontSize: getProportionateScreenWidth(16)),
         ),
-        SizedBox(width: SizeConfig.screenWidth * 0.01),
+        SizedBox(width: SizeConfig.screenWidth * 0.01), // 1% of total width
         GestureDetector(
           onTap: () => Navigator.pushNamed(context, SignUpScreen.routeName),
           child: Text(
             'Sign Up',
             style: TextStyle(
-              fontSize: getProportionateScreenWidth(16),
               color: kPrimaryColor,
+              fontSize: getProportionateScreenWidth(16),
             ),
           ),
         ),

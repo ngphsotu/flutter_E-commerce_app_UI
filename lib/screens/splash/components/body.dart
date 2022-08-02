@@ -43,12 +43,12 @@ class _BodyState extends State<Body> {
             Expanded(
               flex: 3,
               child: PageView.builder(
-                itemCount: splashData.length,
                 onPageChanged: (value) {
                   setState(() {
                     currentPage = value;
                   });
                 },
+                itemCount: splashData.length,
                 itemBuilder: (context, index) => SplashContent(
                   text: splashData[index]['text'].toString(),
                   image: splashData[index]['image'].toString(),

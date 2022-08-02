@@ -1,11 +1,10 @@
-import 'package:e_commerce_app/screens/login_success/login_success_screen.dart';
-
 import '/constants.dart';
 import '/size_config.dart';
 import '/components/form_error.dart';
 import 'package:flutter/material.dart';
 import '/components/default_button.dart';
 import '/components/custom_surffix_icon.dart';
+import '/screens/login_success/login_success_screen.dart';
 import '../../forgot_password/forgot_password_screen.dart';
 
 class SignInForm extends StatefulWidget {
@@ -45,13 +44,13 @@ class _SignInFormState extends State<SignInForm> {
       key: _formkey,
       child: Column(
         children: [
-          // buildEmailFormField
+          // buildEmailFormField - Email Form Field
           buildEmailFormField(),
           SizedBox(height: getProportionateScreenHeight(30)),
-          // buildPasswordFormField
+          // buildPasswordFormField - Password Form Field
           buildPasswordFormField(),
           SizedBox(height: getProportionateScreenHeight(30)),
-          // Row
+          // Row - Rememner me - Forgot password
           Row(
             children: [
               Checkbox(
@@ -73,10 +72,10 @@ class _SignInFormState extends State<SignInForm> {
               ),
             ],
           ),
-          // FormError
+          // FormError - Show errors
           FormError(errors: errors),
           SizedBox(height: getProportionateScreenHeight(20)),
-          // DefaultButton
+          // DefaultButton - Button
           DefaultButton(
             text: 'Continue',
             press: () {
@@ -92,7 +91,7 @@ class _SignInFormState extends State<SignInForm> {
     );
   }
 
-  // buildPasswordFormField
+  // buildPasswordFormField - Password Form Field
   TextFormField buildPasswordFormField() {
     return TextFormField(
       obscureText: true,
@@ -122,7 +121,7 @@ class _SignInFormState extends State<SignInForm> {
     );
   }
 
-  // buildEmailFormField
+  // buildEmailFormField - Email Form Field
   TextFormField buildEmailFormField() {
     return TextFormField(
       keyboardType: TextInputType.emailAddress,

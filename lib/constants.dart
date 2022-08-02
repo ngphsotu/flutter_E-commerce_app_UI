@@ -1,7 +1,5 @@
-import 'package:flutter/material.dart';
-
 import 'size_config.dart';
-// import 'package:shop_app/size_config.dart';
+import 'package:flutter/material.dart';
 
 const kTextColor = Color(0xFF757575);
 const kPrimaryColor = Color(0xFFFF7643);
@@ -27,12 +25,15 @@ final headingStyle = TextStyle(
 // Form Error
 final RegExp emailValidatorRegExp =
     RegExp(r"^[a-zA-Z0-9.]+@[a-zA-Z0-9]+\.[a-zA-Z]+");
+
 const String kEmailNullError = "Please enter your email";
 const String kInvalidEmailError = "Please enter valid email";
+
 const String kPassNullError = "Please enter your password";
 const String kConfPassNullError = "Please confirm your password";
 const String kShortPassError = "Password is too short";
 const String kMatchPassError = "Passwords don't match";
+
 const String klastNamelNullError = "Please enter your last name";
 const String kfirstNamelNullError = "Please enter your first name";
 const String kPhoneNumberNullError = "Please enter your phone number";

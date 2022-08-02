@@ -1,6 +1,6 @@
-import 'package:e_commerce_app/components/default_button.dart';
-import 'package:e_commerce_app/size_config.dart';
+import '/size_config.dart';
 import 'package:flutter/material.dart';
+import '/components/default_button.dart';
 
 class Body extends StatelessWidget {
   const Body({Key? key}) : super(key: key);
@@ -9,12 +9,12 @@ class Body extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        SizedBox(height: SizeConfig.screenHeight * 0.04),
+        SizedBox(height: SizeConfig.screenHeight * 0.04), // 4% of total height
         Image.asset(
           'assets/images/success.png',
-          height: SizeConfig.screenHeight * 0.4, //40%
+          height: SizeConfig.screenHeight * 0.4, // 40% of total height
         ),
-        SizedBox(height: SizeConfig.screenHeight * 0.08),
+        SizedBox(height: SizeConfig.screenHeight * 0.08), // 8% of total height
         Text(
           'Login Success',
           style: TextStyle(
@@ -25,7 +25,7 @@ class Body extends StatelessWidget {
         ),
         const Spacer(),
         SizedBox(
-          width: SizeConfig.screenWidth * 0.6,
+          width: SizeConfig.screenWidth * 0.6, // 6% of total width
           child: DefaultButton(
             text: 'Back to home',
             press: () {},

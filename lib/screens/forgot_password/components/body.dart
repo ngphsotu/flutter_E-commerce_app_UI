@@ -1,10 +1,9 @@
-import 'package:e_commerce_app/components/default_button.dart';
-import 'package:e_commerce_app/components/form_error.dart';
-import 'package:e_commerce_app/components/no_account_text.dart';
-
 import '/constants.dart';
 import '/size_config.dart';
+import '/components/form_error.dart';
 import 'package:flutter/material.dart';
+import '/components/default_button.dart';
+import '/components/no_account_text.dart';
 import '/components/custom_surffix_icon.dart';
 
 class Body extends StatelessWidget {
