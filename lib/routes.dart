@@ -1,3 +1,5 @@
+import 'package:e_commerce_app/screens/forgot_password/forgot_password_screen.dart';
+import 'package:e_commerce_app/screens/sign_in/sign_in_screen.dart';
 import 'package:e_commerce_app/screens/splash/splash_screen.dart';
 import 'package:flutter/widgets.dart';
 // import 'package:shop_app/screens/cart/cart_screen.dart';
@@ -30,5 +32,15 @@ import 'package:flutter/widgets.dart';
 // };
 
 final Map<String, WidgetBuilder> routes = {
+  // SplashScreen
   SplashScreen.routeName: (context) => const SplashScreen(),
+  // SignInScreen
+  SignInScreen.routeName: (context) => const SignInScreen(),
+  // ForgotPasswordScreen
+  ForgotPasswordScreen.routeName: (context) => const ForgotPasswordScreen(),
+  //
+  //
+  //
+  //
+  //
 };
