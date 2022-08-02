@@ -1,5 +1,5 @@
+import 'components/body.dart';
 import 'package:flutter/material.dart';
-import '/screens/sign_in/components/body.dart';
 
 class SignInScreen extends StatelessWidget {
   //

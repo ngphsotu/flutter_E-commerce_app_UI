@@ -51,6 +51,7 @@ flutter:
   assets:
     - assets/images/
     - assets/icons/
+    - assets/fonts/
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
@@ -62,6 +63,7 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   # fonts:
+  fonts:
     - family: Muli
       fonts:
         - asset: assets/fonts/muli/Muli.ttf

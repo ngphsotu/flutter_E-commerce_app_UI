@@ -1,4 +1,4 @@
-import 'sign_form.dart';
+import 'sign_in_form.dart';
 import '/size_config.dart';
 import '/components/socal_card.dart';
 import 'package:flutter/material.dart';
@@ -33,7 +33,7 @@ class Body extends StatelessWidget {
                   textAlign: TextAlign.center,
                 ),
                 SizedBox(height: SizeConfig.screenHeight * 0.08),
-                const SignForm(),
+                const SignInForm(),
                 SizedBox(height: SizeConfig.screenHeight * 0.08),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,

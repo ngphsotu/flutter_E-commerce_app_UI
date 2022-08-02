@@ -1,18 +1,21 @@
+import 'package:e_commerce_app/screens/login_success/login_success_screen.dart';
+
 import '/constants.dart';
 import '/size_config.dart';
 import '/components/form_error.dart';
 import 'package:flutter/material.dart';
 import '/components/default_button.dart';
 import '/components/custom_surffix_icon.dart';
+import '../../forgot_password/forgot_password_screen.dart';
 
-class SignForm extends StatefulWidget {
-  const SignForm({Key? key}) : super(key: key);
+class SignInForm extends StatefulWidget {
+  const SignInForm({Key? key}) : super(key: key);
 
   @override
-  State<SignForm> createState() => _SignFormState();
+  State<SignInForm> createState() => _SignInFormState();
 }
 
-class _SignFormState extends State<SignForm> {
+class _SignInFormState extends State<SignInForm> {
   //
   final _formkey = GlobalKey<FormState>();
   final List<String> errors = [];
@@ -59,8 +62,12 @@ class _SignFormState extends State<SignForm> {
               ),
               const Text('Remember me'),
               const Spacer(),
-              const Text('Forgot password',
-                  style: TextStyle(decoration: TextDecoration.underline)),
+              GestureDetector(
+                onTap: () => Navigator.popAndPushNamed(
+                    context, ForgotPasswordScreen.routeName),
+                child: const Text('Forgot password',
+                    style: TextStyle(decoration: TextDecoration.underline)),
+              ),
             ],
           ),
           FormError(errors: errors),
@@ -70,6 +77,7 @@ class _SignFormState extends State<SignForm> {
             press: () {
               if (_formkey.currentState!.validate()) {
                 _formkey.currentState!.save();
+                Navigator.pushNamed(context, LoginSuccessScreen.routeName);
               }
             },
           ),
