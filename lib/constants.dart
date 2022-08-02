@@ -33,7 +33,8 @@ const String kPassNullError = "Please enter your password";
 const String kConfPassNullError = "Please confirm your password";
 const String kShortPassError = "Password is too short";
 const String kMatchPassError = "Passwords don't match";
-const String kNamelNullError = "Please enter your name";
+const String klastNamelNullError = "Please enter your last name";
+const String kfirstNamelNullError = "Please enter your first name";
 const String kPhoneNumberNullError = "Please enter your phone number";
 const String kAddressNullError = "Please enter your address";
 

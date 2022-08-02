@@ -45,10 +45,13 @@ class _SignInFormState extends State<SignInForm> {
       key: _formkey,
       child: Column(
         children: [
+          // buildEmailFormField
           buildEmailFormField(),
           SizedBox(height: getProportionateScreenHeight(30)),
+          // buildPasswordFormField
           buildPasswordFormField(),
           SizedBox(height: getProportionateScreenHeight(30)),
+          // Row
           Row(
             children: [
               Checkbox(
@@ -70,13 +73,16 @@ class _SignInFormState extends State<SignInForm> {
               ),
             ],
           ),
+          // FormError
           FormError(errors: errors),
           SizedBox(height: getProportionateScreenHeight(20)),
+          // DefaultButton
           DefaultButton(
             text: 'Continue',
             press: () {
               if (_formkey.currentState!.validate()) {
                 _formkey.currentState!.save();
+                // Go to login success page
                 Navigator.pushNamed(context, LoginSuccessScreen.routeName);
               }
             },
@@ -86,6 +92,7 @@ class _SignInFormState extends State<SignInForm> {
     );
   }
 
+  // buildPasswordFormField
   TextFormField buildPasswordFormField() {
     return TextFormField(
       obscureText: true,
@@ -110,13 +117,12 @@ class _SignInFormState extends State<SignInForm> {
       decoration: const InputDecoration(
         labelText: 'Password',
         hintText: 'Enter your password',
-        suffixIcon: CustomSurffixIcon(
-          svgIcon: 'assets/icons/Lock.svg',
-        ),
+        suffixIcon: CustomSurffixIcon(svgIcon: 'assets/icons/Lock.svg'),
       ),
     );
   }
 
+  // buildEmailFormField
   TextFormField buildEmailFormField() {
     return TextFormField(
       keyboardType: TextInputType.emailAddress,
@@ -141,9 +147,7 @@ class _SignInFormState extends State<SignInForm> {
       decoration: const InputDecoration(
         labelText: 'Email',
         hintText: 'Enter your email',
-        suffixIcon: CustomSurffixIcon(
-          svgIcon: 'assets/icons/Mail.svg',
-        ),
+        suffixIcon: CustomSurffixIcon(svgIcon: 'assets/icons/Mail.svg'),
       ),
     );
   }

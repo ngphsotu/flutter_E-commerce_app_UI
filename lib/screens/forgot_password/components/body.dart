@@ -104,7 +104,10 @@ class _ForgotPassFormState extends State<ForgotPassForm> {
           DefaultButton(
             text: 'Continue',
             press: () {
-              if (_formkey.currentState!.validate()) {}
+              if (_formkey.currentState!.validate()) {
+                // Go to ... page
+                // Navigator.pushNamed(context, ...routeName);
+              }
             },
           ),
           SizedBox(height: SizeConfig.screenHeight * 0.1),
