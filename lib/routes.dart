@@ -1,5 +1,6 @@
-import 'package:e_commerce_app/screens/otp/otp_screen.dart';
+import 'screens/otp/otp_screen.dart';
 import 'package:flutter/widgets.dart';
+import 'screens/home/home_screen.dart';
 import 'screens/splash/splash_screen.dart';
 import 'screens/sign_up/sign_up_screen.dart';
 import 'screens/sign_in/sign_in_screen.dart';
@@ -23,7 +24,8 @@ final Map<String, WidgetBuilder> routes = {
   CompeleteProfileScreen.routeName: (context) => const CompeleteProfileScreen(),
   // OtpScreen
   OtpScreen.routeName: (context) => const OtpScreen(),
-  //
+  // HomeScreen
+  HomeScreen.routeName: (context) => const HomeScreen(),
   //
   //
   //

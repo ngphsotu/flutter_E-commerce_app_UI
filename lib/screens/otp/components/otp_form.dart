@@ -1,5 +1,6 @@
 import '/constants.dart';
 import '/size_config.dart';
+import '../../home/home_screen.dart';
 import 'package:flutter/material.dart';
 import '/components/default_button.dart';
 
@@ -114,7 +115,7 @@ class _OtpFormState extends State<OtpForm> {
           // DefaultButton - Button
           DefaultButton(
             text: 'Continue',
-            press: () {},
+            press: () => Navigator.pushNamed(context, HomeScreen.routeName),
           ),
         ],
       ),

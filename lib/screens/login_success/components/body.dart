@@ -1,5 +1,6 @@
 import '/size_config.dart';
 import 'package:flutter/material.dart';
+import '/screens/home/home_screen.dart';
 import '/components/default_button.dart';
 
 class Body extends StatelessWidget {
@@ -30,7 +31,8 @@ class Body extends StatelessWidget {
           width: SizeConfig.screenWidth * 0.6, // 6% of total width
           child: DefaultButton(
             text: 'Back to home',
-            press: () {},
+            // Go to home page
+            press: () => Navigator.pushNamed(context, HomeScreen.routeName),
           ),
         ),
         const Spacer(),
