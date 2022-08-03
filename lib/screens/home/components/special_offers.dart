@@ -11,7 +11,7 @@ class SpecialOffers extends StatelessWidget {
       children: [
         Padding(
           padding:
-              EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(0)),
+              EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(20)),
           child: SectionTitle(
             title: 'Special for you',
             press: () {},
@@ -34,7 +34,7 @@ class SpecialOffers extends StatelessWidget {
                 numOfBrands: 24,
                 press: () {},
               ),
-              // SizedBox(width: getProportionateScreenWidth(20)),
+              //SizedBox(width: getProportionateScreenWidth(20)),
             ],
           ),
         ),

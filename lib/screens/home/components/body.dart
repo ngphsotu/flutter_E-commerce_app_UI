@@ -15,36 +15,23 @@ class Body extends StatelessWidget {
       child: SingleChildScrollView(
         child: Column(
           children: [
-            Container(
-              padding: EdgeInsets.symmetric(
-                  horizontal: getProportionateScreenWidth(0)),
-              child: Column(
-                children: [
-                  Padding(
-                    padding: EdgeInsets.symmetric(
-                        horizontal: getProportionateScreenWidth(20)),
-                    child: Column(
-                      children: [
-                        SizedBox(height: getProportionateScreenHeight(20)),
-                        // HomeHeader
-                        const HomeHeader(),
-                        SizedBox(height: getProportionateScreenHeight(15)),
-                        // DiscountBanner
-                        const DiscountBanner(),
-                        // Categories
-                        const Categories(),
-                        SizedBox(height: getProportionateScreenHeight(20)),
-                        // SpecialOffers
-                        const SpecialOffers(),
-                        SizedBox(height: getProportionateScreenHeight(20)),
-                      ],
-                    ),
-                  ),
-                  // PopularProducts
-                  const PopularProducts(),
-                  SizedBox(height: getProportionateScreenHeight(30)),
-                ],
-              ),
+            Column(
+              children: [
+                SizedBox(height: getProportionateScreenHeight(20)),
+                // HomeHeader
+                const HomeHeader(),
+                SizedBox(height: getProportionateScreenHeight(10)),
+                // DiscountBanner
+                const DiscountBanner(),
+                // Categories
+                const Categories(),
+                // SpecialOffers
+                const SpecialOffers(),
+                SizedBox(height: getProportionateScreenHeight(30)),
+                // PopularProducts
+                const PopularProducts(),
+                SizedBox(height: getProportionateScreenHeight(30)),
+              ],
             ),
           ],
         ),

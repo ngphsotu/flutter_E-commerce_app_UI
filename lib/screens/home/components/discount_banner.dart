@@ -8,10 +8,10 @@ class DiscountBanner extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      margin: EdgeInsets.only(bottom: getProportionateScreenWidth(15)),
+      margin: EdgeInsets.all(getProportionateScreenWidth(20)),
       padding: EdgeInsets.symmetric(
         horizontal: getProportionateScreenWidth(20),
-        vertical: getProportionateScreenWidth(10),
+        vertical: getProportionateScreenWidth(15),
       ),
       decoration: BoxDecoration(
         color: const Color(0xFF4A3298),
