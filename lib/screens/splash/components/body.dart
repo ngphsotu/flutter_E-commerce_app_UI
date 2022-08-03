@@ -71,6 +71,7 @@ class _BodyState extends State<Body> {
                       ),
                     ),
                     const Spacer(flex: 3),
+                    // DefaultButton - Button
                     DefaultButton(
                       text: 'Continue',
                       press: () {
@@ -89,6 +90,7 @@ class _BodyState extends State<Body> {
     );
   }
 
+  // buildDot - dot
   AnimatedContainer buildDot({required int index}) {
     return AnimatedContainer(
       width: currentPage == index ? 20 : 6,

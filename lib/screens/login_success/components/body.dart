@@ -10,6 +10,7 @@ class Body extends StatelessWidget {
     return Column(
       children: [
         SizedBox(height: SizeConfig.screenHeight * 0.04), // 4% of total height
+        // Image
         Image.asset(
           'assets/images/success.png',
           height: SizeConfig.screenHeight * 0.4, // 40% of total height
@@ -24,6 +25,7 @@ class Body extends StatelessWidget {
           ),
         ),
         const Spacer(),
+        // Button
         SizedBox(
           width: SizeConfig.screenWidth * 0.6, // 6% of total width
           child: DefaultButton(

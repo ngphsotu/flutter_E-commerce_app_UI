@@ -39,17 +39,17 @@ const String kfirstNamelNullError = "Please enter your first name";
 const String kPhoneNumberNullError = "Please enter your phone number";
 const String kAddressNullError = "Please enter your address";
 
-// final otpInputDecoration = InputDecoration(
-//   contentPadding:
-//       EdgeInsets.symmetric(vertical: getProportionateScreenWidth(15)),
-//   border: outlineInputBorder(),
-//   focusedBorder: outlineInputBorder(),
-//   enabledBorder: outlineInputBorder(),
-// );
+final otpInputDecoration = InputDecoration(
+  border: outlineInputBorder(),
+  focusedBorder: outlineInputBorder(),
+  enabledBorder: outlineInputBorder(),
+  contentPadding:
+      EdgeInsets.symmetric(vertical: getProportionateScreenWidth(15)),
+);
 
-// OutlineInputBorder outlineInputBorder() {
-//   return OutlineInputBorder(
-//     borderRadius: BorderRadius.circular(getProportionateScreenWidth(15)),
-//     borderSide: BorderSide(color: kTextColor),
-//   );
-// }
+OutlineInputBorder outlineInputBorder() {
+  return OutlineInputBorder(
+    borderSide: const BorderSide(color: kTextColor),
+    borderRadius: BorderRadius.circular(getProportionateScreenWidth(15)),
+  );
+}

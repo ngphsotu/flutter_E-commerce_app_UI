@@ -2,7 +2,7 @@ import 'components/body.dart';
 import 'package:flutter/material.dart';
 
 class CompeleteProfileScreen extends StatelessWidget {
-  // routeName
+  // routeName - complete profile
   static String routeName = '/complete_profile';
 
   const CompeleteProfileScreen({Key? key}) : super(key: key);

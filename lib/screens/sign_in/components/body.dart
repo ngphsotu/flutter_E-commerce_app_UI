@@ -1,5 +1,5 @@
-import 'sign_in_form.dart';
 import '/size_config.dart';
+import 'sign_in_form.dart';
 import '/components/socal_card.dart';
 import 'package:flutter/material.dart';
 import '/components/no_account_text.dart';
@@ -18,7 +18,9 @@ class Body extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                SizedBox(height: SizeConfig.screenHeight * 0.04),
+                SizedBox(
+                    height:
+                        SizeConfig.screenHeight * 0.04), // 4% of total height
                 Text(
                   'Welcome Back',
                   style: TextStyle(
@@ -27,18 +29,22 @@ class Body extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                SizedBox(height: SizeConfig.screenHeight * 0.005),
+                SizedBox(
+                    height: SizeConfig.screenHeight *
+                        0.005), // 0.5% of total height
                 const Text(
                   'Sign in with your email and password \nor continue with social media',
                   textAlign: TextAlign.center,
                 ),
-                SizedBox(height: SizeConfig.screenHeight * 0.08),
+                SizedBox(
+                    height:
+                        SizeConfig.screenHeight * 0.08), // 8% of total height
+                // SignInForm - Sign In Form
                 const SignInForm(),
-                SizedBox(height: SizeConfig.screenHeight * 0.08),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                ),
-                SizedBox(height: getProportionateScreenHeight(20)),
+                SizedBox(
+                    height:
+                        SizeConfig.screenHeight * 0.08), // 8% of total height
+                // Row - Google - Facebook - Twitter
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -57,6 +63,7 @@ class Body extends StatelessWidget {
                   ],
                 ),
                 SizedBox(height: getProportionateScreenHeight(20)),
+                // NoAccountText - Don't have an account? - Sign up
                 const NoAccountText(),
               ],
             ),

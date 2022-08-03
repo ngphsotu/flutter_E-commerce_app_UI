@@ -19,7 +19,8 @@ class Body extends StatelessWidget {
               EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(20)),
           child: Column(
             children: [
-              SizedBox(height: SizeConfig.screenHeight * 0.04),
+              SizedBox(
+                  height: SizeConfig.screenHeight * 0.04), // 4% of total height
               Text(
                 'Forgot Password',
                 style: TextStyle(
@@ -32,7 +33,9 @@ class Body extends StatelessWidget {
                 'Please enter your email and we will send \nyou a link to return to your account',
                 textAlign: TextAlign.center,
               ),
-              SizedBox(height: SizeConfig.screenHeight * 0.1),
+              SizedBox(
+                  height: SizeConfig.screenHeight * 0.1), // 1% of total height
+              // ForgotPassForm - Forgot Password Form
               const ForgotPassForm(),
             ],
           ),
@@ -51,8 +54,8 @@ class ForgotPassForm extends StatefulWidget {
 
 class _ForgotPassFormState extends State<ForgotPassForm> {
   //
-  List<String> errors = [];
   String? email;
+  List<String> errors = [];
   final _formkey = GlobalKey<FormState>();
 
   @override
@@ -61,6 +64,7 @@ class _ForgotPassFormState extends State<ForgotPassForm> {
       key: _formkey,
       child: Column(
         children: [
+          // Email Form Field
           TextFormField(
             keyboardType: TextInputType.emailAddress,
             onSaved: (newValue) => email = newValue,
@@ -92,14 +96,14 @@ class _ForgotPassFormState extends State<ForgotPassForm> {
             decoration: const InputDecoration(
               labelText: 'Email',
               hintText: 'Enter your email',
-              suffixIcon: CustomSurffixIcon(
-                svgIcon: 'assets/icons/Mail.svg',
-              ),
+              suffixIcon: CustomSurffixIcon(svgIcon: 'assets/icons/Mail.svg'),
             ),
           ),
           SizedBox(height: getProportionateScreenHeight(30)),
+          // FormError - Show errors
           FormError(errors: errors),
           SizedBox(height: SizeConfig.screenHeight * 0.1),
+          // DefaultButton - Button
           DefaultButton(
             text: 'Continue',
             press: () {
@@ -110,6 +114,7 @@ class _ForgotPassFormState extends State<ForgotPassForm> {
             },
           ),
           SizedBox(height: SizeConfig.screenHeight * 0.1),
+          // NoAccountText - Don't have an account? - Sign up
           const NoAccountText(),
         ],
       ),

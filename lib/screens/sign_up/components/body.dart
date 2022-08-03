@@ -26,9 +26,11 @@ class Body extends StatelessWidget {
               ),
               SizedBox(
                   height: SizeConfig.screenHeight * 0.08), // 8% of total height
+              // SignUpForm - Sign Up Form
               const SignUpForm(),
               SizedBox(
                   height: SizeConfig.screenHeight * 0.08), // 8% of total height
+              // Row - Google - Facebook - Twitter
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [

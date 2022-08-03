@@ -1,6 +1,7 @@
 import '/constants.dart';
 import '/size_config.dart';
 import '/components/form_error.dart';
+import '/screens/otp/otp_screen.dart';
 import '/components/default_button.dart';
 import 'package:flutter/material.dart';
 import '/components/custom_surffix_icon.dart';
@@ -14,12 +15,12 @@ class CompleteProfileForm extends StatefulWidget {
 
 class _CompleteProfileFormState extends State<CompleteProfileForm> {
   //
-  final _formkey = GlobalKey<FormState>();
-  final List<String> errors = [];
   String? firstName;
   String? lastName;
   String? phoneNumber;
   String? address;
+  final List<String> errors = [];
+  final _formkey = GlobalKey<FormState>();
 
   // addError
   void addError({String? error}) {
@@ -56,7 +57,7 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
           SizedBox(height: getProportionateScreenHeight(30)),
           // buildAddressFormField - Address
           buildAddressFormField(),
-          // FormError - Show Error
+          // FormError - Show errors
           FormError(errors: errors),
           SizedBox(height: getProportionateScreenHeight(40)),
           // DefaultButton - Button
@@ -64,7 +65,8 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
             text: 'Continue',
             press: () {
               if (_formkey.currentState!.validate()) {
-                // Go to ... page
+                // Go to Otp page
+                Navigator.pushNamed(context, OtpScreen.routeName);
               }
             },
           ),

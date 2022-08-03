@@ -17,6 +17,7 @@ class NoAccountText extends StatelessWidget {
         ),
         SizedBox(width: SizeConfig.screenWidth * 0.01), // 1% of total width
         GestureDetector(
+          // Go to Sign Up page
           onTap: () => Navigator.pushNamed(context, SignUpScreen.routeName),
           child: Text(
             'Sign Up',

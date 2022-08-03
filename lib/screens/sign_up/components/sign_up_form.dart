@@ -17,12 +17,12 @@ class SignUpForm extends StatefulWidget {
 
 class _SignUpFormState extends State<SignUpForm> {
   //
-  final _formkey = GlobalKey<FormState>();
+  bool remember = false;
   String? email;
   String? password;
   String? confirm_password;
-  bool remember = false;
   final List<String> errors = [];
+  final _formkey = GlobalKey<FormState>();
 
   // addError
   void addError({String? error}) {
@@ -48,14 +48,19 @@ class _SignUpFormState extends State<SignUpForm> {
       key: _formkey,
       child: Column(
         children: [
+          // buildEmailFormField - Email Form Field
           buildEmailFormField(),
           SizedBox(height: getProportionateScreenHeight(30)),
+          // buildPasswordFormField - Password Form Field
           buildPasswordFormField(),
           SizedBox(height: getProportionateScreenHeight(30)),
+          // buildConfirmPassFormField - Confirm Password Form Field
           buildConfirmPassFormField(),
           SizedBox(height: getProportionateScreenHeight(30)),
+          // FormError - Show errors
           FormError(errors: errors),
           SizedBox(height: getProportionateScreenHeight(40)),
+          // DefaultButton - Button
           DefaultButton(
             text: 'Continue',
             press: () {
@@ -71,7 +76,7 @@ class _SignUpFormState extends State<SignUpForm> {
     );
   }
 
-  // buildConfirmPassFormField
+  // buildConfirmPassFormField - Confirm Password Form Field
   TextFormField buildConfirmPassFormField() {
     return TextFormField(
       obscureText: true,
@@ -102,7 +107,7 @@ class _SignUpFormState extends State<SignUpForm> {
     );
   }
 
-  // buildPasswordFormField
+  // buildPasswordFormField - Password Form Field
   TextFormField buildPasswordFormField() {
     return TextFormField(
       obscureText: true,
@@ -133,7 +138,7 @@ class _SignUpFormState extends State<SignUpForm> {
     );
   }
 
-  // buildEmailFormField
+  // buildEmailFormField - Email Form Field
   TextFormField buildEmailFormField() {
     return TextFormField(
       keyboardType: TextInputType.emailAddress,

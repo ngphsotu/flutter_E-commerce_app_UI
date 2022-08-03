@@ -16,11 +16,11 @@ class SignInForm extends StatefulWidget {
 
 class _SignInFormState extends State<SignInForm> {
   //
-  final _formkey = GlobalKey<FormState>();
-  final List<String> errors = [];
+  bool? remember = false;
   String? email;
   String? password;
-  bool? remember = false;
+  final List<String> errors = [];
+  final _formkey = GlobalKey<FormState>();
 
   void addError({String? error}) {
     if (!errors.contains(error)) {
