@@ -96,7 +96,8 @@ class _ForgotPassFormState extends State<ForgotPassForm> {
             decoration: const InputDecoration(
               labelText: 'Email',
               hintText: 'Enter your email',
-              suffixIcon: CustomSurffixIcon(svgIcon: 'assets/icons/Mail.svg'),
+              suffixIcon:
+                  CustomSurffixIcon(svgIcon: 'assets/icons/mail_icon.svg'),
             ),
           ),
           SizedBox(height: getProportionateScreenHeight(30)),

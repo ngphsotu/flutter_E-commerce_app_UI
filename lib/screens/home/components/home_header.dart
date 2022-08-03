@@ -1,5 +1,4 @@
-import 'package:e_commerce_app/size_config.dart';
-
+import '/size_config.dart';
 import 'search_field.dart';
 import 'icon_btn_with_counter.dart';
 import 'package:flutter/material.dart';
@@ -19,7 +18,7 @@ class HomeHeader extends StatelessWidget {
           Flexible(
             flex: 1,
             child: IconBtnWithCounter(
-              svgSrc: 'assets/icons/Cart Icon.svg',
+              svgSrc: 'assets/icons/cart_icon.svg',
               // Go to CartScreen
               //press: ()=> Navigator.pushNamed(context, routeName),
               press: () {},
@@ -29,7 +28,7 @@ class HomeHeader extends StatelessWidget {
             flex: 1,
             child: IconBtnWithCounter(
               numOfitem: 3,
-              svgSrc: 'assets/icons/Bell.svg',
+              svgSrc: 'assets/icons/bell.svg',
               press: () {},
             ),
           ),

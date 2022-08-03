@@ -23,7 +23,7 @@ class FormError extends StatelessWidget {
   Row formErrorText({required String error}) {
     return Row(
       children: [
-        SvgPicture.asset('assets/icons/Error.svg'),
+        SvgPicture.asset('assets/icons/error.svg'),
         SizedBox(
           height: getProportionateScreenWidth(14),
           width: getProportionateScreenWidth(14),

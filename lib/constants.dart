@@ -16,7 +16,7 @@ const kPrimaryGradientColor = LinearGradient(
 final headingStyle = TextStyle(
   color: Colors.black,
   height: 1.5,
-  fontSize: getProportionateScreenWidth(20),
+  fontSize: getProportionateScreenWidth(28),
   fontWeight: FontWeight.bold,
 );
 

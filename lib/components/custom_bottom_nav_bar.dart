@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:e_commerce_app/constants.dart';
 import 'package:e_commerce_app/screens/home/home_screen.dart';
 import 'package:flutter_svg/svg.dart';
@@ -56,11 +58,17 @@ class CustomBottomNavBar extends StatelessWidget {
             ),
             IconButton(
               onPressed: () {},
-              icon: SvgPicture.asset('assets/icons/heart_icon.svg'),
+              icon: SvgPicture.asset('assets/icons/chat_bubble_icon.svg'),
             ),
             IconButton(
+              //onPressed: () => Navigator.pushNamed(context, ProfileScreen.routeName),
               onPressed: () {},
-              icon: SvgPicture.asset('assets/icons/heart_icon.svg'),
+              icon: SvgPicture.asset(
+                'assets/icons/user_icon.svg',
+                color: MenuState.profile == selectedMenu
+                    ? kPrimaryColor
+                    : inActiveIconColor,
+              ),
             ),
           ],
         ),

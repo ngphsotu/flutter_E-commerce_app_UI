@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import '/constants.dart';
 import '/size_config.dart';
 import 'package:flutter/material.dart';

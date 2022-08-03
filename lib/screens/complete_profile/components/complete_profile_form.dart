@@ -95,7 +95,7 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
         labelText: 'Address',
         hintText: 'Enter your address',
         suffixIcon:
-            CustomSurffixIcon(svgIcon: 'assets/icons/Location point.svg'),
+            CustomSurffixIcon(svgIcon: 'assets/icons/location_point.svg'),
       ),
     );
   }
@@ -120,7 +120,7 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
       decoration: const InputDecoration(
         labelText: 'Phone Number',
         hintText: 'Enter your phone number',
-        suffixIcon: CustomSurffixIcon(svgIcon: 'assets/icons/Phone.svg'),
+        suffixIcon: CustomSurffixIcon(svgIcon: 'assets/icons/phone.svg'),
       ),
     );
   }
@@ -144,7 +144,7 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
       decoration: const InputDecoration(
         labelText: 'Last Name',
         hintText: 'Enter your last name',
-        suffixIcon: CustomSurffixIcon(svgIcon: 'assets/icons/User.svg'),
+        suffixIcon: CustomSurffixIcon(svgIcon: 'assets/icons/user.svg'),
       ),
     );
   }
@@ -168,7 +168,7 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
       decoration: const InputDecoration(
         labelText: 'First Name',
         hintText: 'Enter your first name',
-        suffixIcon: CustomSurffixIcon(svgIcon: 'assets/icons/User.svg'),
+        suffixIcon: CustomSurffixIcon(svgIcon: 'assets/icons/user.svg'),
       ),
     );
   }

@@ -1,8 +1,7 @@
-import 'package:e_commerce_app/components/custom_bottom_nav_bar.dart';
-import 'package:e_commerce_app/enums.dart';
-
+import '/enums.dart';
 import 'components/body.dart';
 import 'package:flutter/material.dart';
+import '/components/custom_bottom_nav_bar.dart';
 
 class HomeScreen extends StatelessWidget {
   // routeName - home
@@ -14,7 +13,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Body(),
-      //bottomNavigationBar: CustomBottomNavBar(selectedMenu: MenuState.home),
+      bottomNavigationBar: CustomBottomNavBar(selectedMenu: MenuState.home),
     );
   }
 }

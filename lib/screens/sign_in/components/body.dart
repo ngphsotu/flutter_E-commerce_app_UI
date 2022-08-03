@@ -1,3 +1,5 @@
+import 'package:e_commerce_app/constants.dart';
+
 import '/size_config.dart';
 import 'sign_in_form.dart';
 import '/components/socal_card.dart';
@@ -20,15 +22,8 @@ class Body extends StatelessWidget {
               children: [
                 SizedBox(
                     height:
-                        SizeConfig.screenHeight * 0.04), // 4% of total height
-                Text(
-                  'Welcome Back',
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontSize: getProportionateScreenWidth(28),
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
+                        SizeConfig.screenHeight * 0.02), // 2% of total height
+                Text('Welcome Back', style: headingStyle),
                 SizedBox(
                     height: SizeConfig.screenHeight *
                         0.005), // 0.5% of total height

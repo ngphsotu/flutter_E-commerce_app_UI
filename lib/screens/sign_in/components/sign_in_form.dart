@@ -116,7 +116,7 @@ class _SignInFormState extends State<SignInForm> {
       decoration: const InputDecoration(
         labelText: 'Password',
         hintText: 'Enter your password',
-        suffixIcon: CustomSurffixIcon(svgIcon: 'assets/icons/Lock.svg'),
+        suffixIcon: CustomSurffixIcon(svgIcon: 'assets/icons/lock.svg'),
       ),
     );
   }
@@ -146,7 +146,7 @@ class _SignInFormState extends State<SignInForm> {
       decoration: const InputDecoration(
         labelText: 'Email',
         hintText: 'Enter your email',
-        suffixIcon: CustomSurffixIcon(svgIcon: 'assets/icons/Mail.svg'),
+        suffixIcon: CustomSurffixIcon(svgIcon: 'assets/icons/mail_icon.svg'),
       ),
     );
   }

@@ -79,7 +79,7 @@ class ProductCard extends StatelessWidget {
                         shape: BoxShape.circle,
                       ),
                       child: SvgPicture.asset(
-                        'assets/icons/Heart Icon_2.svg',
+                        'assets/icons/heart_icon_2.svg',
                         color: product.isFavorite
                             ? const Color(0xFFFF4848)
                             : const Color(0xFFDBDEE4),
