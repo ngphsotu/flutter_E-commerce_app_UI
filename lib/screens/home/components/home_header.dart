@@ -1,3 +1,5 @@
+import 'package:e_commerce_app/screens/cart/cart_screen.dart';
+
 import '/size_config.dart';
 import 'search_field.dart';
 import 'icon_btn_with_counter.dart';
@@ -20,8 +22,7 @@ class HomeHeader extends StatelessWidget {
             child: IconBtnWithCounter(
               svgSrc: 'assets/icons/cart_icon.svg',
               // Go to CartScreen
-              //press: ()=> Navigator.pushNamed(context, routeName),
-              press: () {},
+              press: () => Navigator.pushNamed(context, CartScreen.routeName),
             ),
           ),
           Flexible(

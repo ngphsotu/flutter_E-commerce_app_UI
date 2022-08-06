@@ -20,7 +20,7 @@ class ProductDescription extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        //
+        // Text of product
         Padding(
           padding:
               EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(20)),
@@ -29,7 +29,7 @@ class ProductDescription extends StatelessWidget {
             style: Theme.of(context).textTheme.headline6,
           ),
         ),
-        //
+        // Heart
         Align(
           alignment: Alignment.centerRight,
           child: Container(

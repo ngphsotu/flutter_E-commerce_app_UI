@@ -47,6 +47,7 @@ List<Product> demoProducts = [
       'assets/images/ps4_console_white_4.png',
     ],
   ),
+
   // Product 2
   Product(
     id: 2,
@@ -63,6 +64,7 @@ List<Product> demoProducts = [
     ],
     images: ['assets/images/Image Popular Product 2.png'],
   ),
+
   // Product 3
   Product(
     id: 3,
@@ -80,6 +82,7 @@ List<Product> demoProducts = [
     ],
     images: ['assets/images/glap.png'],
   ),
+
   // Product 4
   Product(
     id: 4,

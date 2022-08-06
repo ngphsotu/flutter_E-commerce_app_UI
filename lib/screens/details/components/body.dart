@@ -1,3 +1,4 @@
+import '../../cart/cart_screen.dart';
 import 'color_dots.dart';
 import '/size_config.dart';
 import 'product_image.dart';
@@ -19,7 +20,7 @@ class Body extends StatelessWidget {
       children: [
         // ProductImages - Image of Products
         ProductImages(product: product),
-        //
+        // Description of product
         TopRoundedContainer(
           color: Colors.white,
           child: Column(
@@ -35,7 +36,7 @@ class Body extends StatelessWidget {
                   children: [
                     // ColorDots
                     ColorDots(product: product),
-                    //
+                    // Button 'Add To Cart'
                     TopRoundedContainer(
                       color: Colors.white,
                       child: Padding(
@@ -47,7 +48,9 @@ class Body extends StatelessWidget {
                         ),
                         child: DefaultButton(
                           text: 'Add To Cart',
-                          press: () {},
+                          // Go to CartScreen
+                          press: () => Navigator.pushNamed(
+                              context, CartScreen.routeName),
                         ),
                       ),
                     ),
