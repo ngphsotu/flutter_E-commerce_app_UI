@@ -1,6 +1,7 @@
 import 'size_config.dart';
 import 'package:flutter/material.dart';
 
+// Color
 const kTextColor = Color(0xFF757575);
 const kPrimaryColor = Color(0xFFFF7643);
 const kSecondaryColor = Color(0xFF979797);
@@ -12,7 +13,7 @@ const kPrimaryGradientColor = LinearGradient(
   colors: [Color(0xFFFFA53E), Color(0xFFFF7643)],
 );
 
-// headingStyle
+// headingStyle - Style of text
 final headingStyle = TextStyle(
   color: Colors.black,
   height: 1.5,
@@ -20,7 +21,8 @@ final headingStyle = TextStyle(
   fontWeight: FontWeight.bold,
 );
 
-// const defaultDuration = Duration(milliseconds: 250);
+// defaultDuration - Use in details screen
+const defaultDuration = Duration(milliseconds: 250);
 
 // Form Error
 final RegExp emailValidatorRegExp =
@@ -29,16 +31,17 @@ final RegExp emailValidatorRegExp =
 const String kEmailNullError = "Please enter your email";
 const String kInvalidEmailError = "Please enter valid email";
 
-const String kPassNullError = "Please enter your password";
-const String kConfPassNullError = "Please confirm your password";
 const String kShortPassError = "Password is too short";
 const String kMatchPassError = "Passwords don't match";
+const String kPassNullError = "Please enter your password";
+const String kConfPassNullError = "Please confirm your password";
 
 const String klastNamelNullError = "Please enter your last name";
 const String kfirstNamelNullError = "Please enter your first name";
 const String kPhoneNumberNullError = "Please enter your phone number";
 const String kAddressNullError = "Please enter your address";
 
+// otpInputDecoration - Use in otp screen
 final otpInputDecoration = InputDecoration(
   border: outlineInputBorder(),
   focusedBorder: outlineInputBorder(),

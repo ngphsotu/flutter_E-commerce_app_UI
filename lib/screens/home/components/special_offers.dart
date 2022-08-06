@@ -24,17 +24,29 @@ class SpecialOffers extends StatelessWidget {
             children: [
               SpecialOfferCard(
                 category: 'Smartphone',
-                image: 'assets/images/Image Banner 2.png',
-                numOfBrands: 18,
+                image: 'assets/images/image_banner_2.png',
+                numOfBrands: 12,
                 press: () {},
               ),
               SpecialOfferCard(
                 category: 'Fashion',
-                image: 'assets/images/Image Banner 3.png',
-                numOfBrands: 24,
+                image: 'assets/images/image_banner_3.png',
+                numOfBrands: 34,
                 press: () {},
               ),
-              //SizedBox(width: getProportionateScreenWidth(20)),
+              SpecialOfferCard(
+                category: 'Travel',
+                image: 'assets/images/image_banner_2.png',
+                numOfBrands: 56,
+                press: () {},
+              ),
+              SpecialOfferCard(
+                category: 'Home',
+                image: 'assets/images/image_banner_3.png',
+                numOfBrands: 78,
+                press: () {},
+              ),
+              SizedBox(width: getProportionateScreenWidth(20)),
             ],
           ),
         ),
@@ -59,43 +71,56 @@ class SpecialOfferCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        Image.asset(image, fit: BoxFit.cover),
-        Container(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter,
-              colors: [
-                const Color(0xFF343434).withOpacity(0.4),
-                const Color(0xFF343434).withOpacity(0.15),
-              ],
-            ),
-          ),
-        ),
-        Padding(
-          padding: EdgeInsets.symmetric(
-            horizontal: getProportionateScreenWidth(15),
-            vertical: getProportionateScreenWidth(10),
-          ),
-          child: Text.rich(
-            TextSpan(
-              style: const TextStyle(color: Colors.white),
+    return Padding(
+      padding: EdgeInsets.only(left: getProportionateScreenWidth(20)),
+      child: GestureDetector(
+        onTap: press,
+        child: SizedBox(
+          width: getProportionateScreenWidth(242),
+          height: getProportionateScreenWidth(100),
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(20),
+            child: Stack(
               children: [
-                TextSpan(
-                  text: '$category\n',
-                  style: TextStyle(
-                    fontSize: getProportionateScreenWidth(18),
-                    fontWeight: FontWeight.bold,
+                Image.asset(image, fit: BoxFit.cover),
+                Container(
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter,
+                      colors: [
+                        const Color(0xFF343434).withOpacity(0.4),
+                        const Color(0xFF343434).withOpacity(0.15),
+                      ],
+                    ),
                   ),
                 ),
-                TextSpan(text: '$numOfBrands Brands'),
+                Padding(
+                  padding: EdgeInsets.symmetric(
+                    horizontal: getProportionateScreenWidth(15),
+                    vertical: getProportionateScreenWidth(10),
+                  ),
+                  child: Text.rich(
+                    TextSpan(
+                      style: const TextStyle(color: Colors.white),
+                      children: [
+                        TextSpan(
+                          text: '$category\n',
+                          style: TextStyle(
+                            fontSize: getProportionateScreenWidth(18),
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        TextSpan(text: '$numOfBrands Brands'),
+                      ],
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
         ),
-      ],
+      ),
     );
   }
 }

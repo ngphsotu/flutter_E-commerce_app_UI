@@ -2,18 +2,20 @@ import 'constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+// theme
 ThemeData theme() {
   return ThemeData(
-    primarySwatch: Colors.green,
     textTheme: textTheme(),
     fontFamily: "Muli",
     appBarTheme: appBarTheme(),
+    primarySwatch: Colors.green,
     inputDecorationTheme: inputDecorationTheme(),
     scaffoldBackgroundColor: Colors.white,
     visualDensity: VisualDensity.adaptivePlatformDensity,
   );
 }
 
+// inputDecorationTheme
 InputDecorationTheme inputDecorationTheme() {
   OutlineInputBorder outlineInputBorder = OutlineInputBorder(
     gapPadding: 10,
@@ -32,6 +34,7 @@ InputDecorationTheme inputDecorationTheme() {
   );
 }
 
+// textTheme
 TextTheme textTheme() {
   return const TextTheme(
     bodyText1: TextStyle(color: kTextColor),
@@ -39,6 +42,7 @@ TextTheme textTheme() {
   );
 }
 
+// appBarTheme
 AppBarTheme appBarTheme() {
   return const AppBarTheme(
     color: Colors.white,

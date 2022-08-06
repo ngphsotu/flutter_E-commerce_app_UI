@@ -27,7 +27,7 @@ class HomeHeader extends StatelessWidget {
           Flexible(
             flex: 1,
             child: IconBtnWithCounter(
-              numOfitem: 3,
+              numOfItems: 3,
               svgSrc: 'assets/icons/bell.svg',
               press: () {},
             ),

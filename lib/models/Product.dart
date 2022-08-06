@@ -23,11 +23,9 @@ class Product {
   });
 }
 
-const String description =
-    "Wireless Controller for PS4™ gives you what you want in your gaming from over precision control your games to sharing …";
-
 // Demo Products
 List<Product> demoProducts = [
+  // Product 1
   Product(
     id: 1,
     title: 'Wireless Controller for PS4',
@@ -49,6 +47,7 @@ List<Product> demoProducts = [
       'assets/images/ps4_console_white_4.png',
     ],
   ),
+  // Product 2
   Product(
     id: 2,
     title: 'Nike Sport White - Man Pant',
@@ -64,6 +63,7 @@ List<Product> demoProducts = [
     ],
     images: ['assets/images/Image Popular Product 2.png'],
   ),
+  // Product 3
   Product(
     id: 3,
     title: 'Gloves XC Omega - Polygon',
@@ -80,6 +80,7 @@ List<Product> demoProducts = [
     ],
     images: ['assets/images/glap.png'],
   ),
+  // Product 4
   Product(
     id: 4,
     title: 'Logitech Head',
@@ -96,3 +97,6 @@ List<Product> demoProducts = [
     images: ['assets/images/wireless headset.png'],
   ),
 ];
+
+const String description =
+    "Wireless Controller for PS4™ gives you what you want in your gaming from over precision control your games to sharing …";

@@ -11,7 +11,7 @@ class DiscountBanner extends StatelessWidget {
       margin: EdgeInsets.all(getProportionateScreenWidth(20)),
       padding: EdgeInsets.symmetric(
         horizontal: getProportionateScreenWidth(20),
-        vertical: getProportionateScreenWidth(15),
+        vertical: getProportionateScreenWidth(10),
       ),
       decoration: BoxDecoration(
         color: const Color(0xFF4A3298),
@@ -23,7 +23,7 @@ class DiscountBanner extends StatelessWidget {
           children: [
             const TextSpan(text: 'A Summer Surpise\n'),
             TextSpan(
-              text: 'cashback 20%',
+              text: 'Cashback 20%',
               style: TextStyle(
                 fontSize: getProportionateScreenWidth(24),
                 fontWeight: FontWeight.bold,

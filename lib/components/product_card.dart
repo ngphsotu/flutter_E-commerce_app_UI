@@ -8,32 +8,30 @@ class ProductCard extends StatelessWidget {
   //
   final double width, aspectRatio;
   final Product product;
+  final GestureTapCallback press;
 
   const ProductCard({
     Key? key,
     this.width = 140,
     this.aspectRatio = 1.02,
     required this.product,
+    required this.press,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.only(
-        left: getProportionateScreenWidth(20),
-      ),
-      // padding: EdgeInsets.only(
-      //   left: getProportionateScreenWidth(20),
-      // ),
+    return Padding(
+      padding: EdgeInsets.only(left: getProportionateScreenWidth(20)),
       child: SizedBox(
         width: getProportionateScreenWidth(width),
         child: GestureDetector(
-          onTap: () {},
+          onTap: press,
           //onTap: () => Navigator.pushNamed(context, DetailsScreen.routeName, arguments: )
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               AspectRatio(
-                aspectRatio: 1.02,
+                aspectRatio: aspectRatio,
                 child: Container(
                   padding: EdgeInsets.all(getProportionateScreenWidth(20)),
                   decoration: BoxDecoration(
@@ -48,12 +46,16 @@ class ProductCard extends StatelessWidget {
                   ),
                 ),
               ),
-              const SizedBox(height: 10),
-              Text(
-                product.title,
-                style: const TextStyle(color: Colors.black),
-                maxLines: 2,
+              SizedBox(height: getProportionateScreenHeight(5)),
+              SizedBox(
+                height: getProportionateScreenHeight(35),
+                child: Text(
+                  product.title,
+                  style: const TextStyle(color: Colors.black),
+                  maxLines: 2,
+                ),
               ),
+              //const SizedBox(height: 20),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [

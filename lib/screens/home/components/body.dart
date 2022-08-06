@@ -18,19 +18,23 @@ class Body extends StatelessWidget {
             Column(
               children: [
                 SizedBox(height: getProportionateScreenHeight(20)),
-                // HomeHeader
+                // 1 - HomeHeader
                 const HomeHeader(),
                 SizedBox(height: getProportionateScreenHeight(10)),
-                // DiscountBanner
+
+                // 2 - DiscountBanner
                 const DiscountBanner(),
-                // Categories
+
+                // 3 - Categories
                 const Categories(),
-                // SpecialOffers
+
+                // 4 - SpecialOffers
                 const SpecialOffers(),
-                SizedBox(height: getProportionateScreenHeight(30)),
-                // PopularProducts
+                SizedBox(height: getProportionateScreenHeight(20)),
+
+                // 5 - PopularProducts
                 const PopularProducts(),
-                SizedBox(height: getProportionateScreenHeight(30)),
+                SizedBox(height: getProportionateScreenHeight(20)),
               ],
             ),
           ],
