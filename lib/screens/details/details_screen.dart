@@ -1,7 +1,7 @@
 import 'components/body.dart';
 import '/models/Product.dart';
 import 'package:flutter/material.dart';
-import './components/custom_app_bar.dart';
+import 'components/custom_app_bar.dart';
 
 class DetailsScreen extends StatelessWidget {
   // routeName - details

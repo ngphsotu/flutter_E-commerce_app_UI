@@ -1,9 +1,8 @@
-import 'package:e_commerce_app/screens/cart/cart_screen.dart';
-
 import '/size_config.dart';
 import 'search_field.dart';
 import 'icon_btn_with_counter.dart';
 import 'package:flutter/material.dart';
+import '/screens/cart/cart_screen.dart';
 
 class HomeHeader extends StatelessWidget {
   const HomeHeader({Key? key}) : super(key: key);

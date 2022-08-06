@@ -1,3 +1,5 @@
+import 'package:e_commerce_app/screens/profile/profile_screen.dart';
+
 import 'screens/otp/otp_screen.dart';
 import 'package:flutter/widgets.dart';
 import 'screens/cart/cart_screen.dart';
@@ -42,5 +44,6 @@ final Map<String, WidgetBuilder> routes = {
   // CartScreen
   CartScreen.routeName: (context) => const CartScreen(),
 
-  //
+  // ProfileScreen
+  ProfileScreen.routeName: (context) => const ProfileScreen(),
 };

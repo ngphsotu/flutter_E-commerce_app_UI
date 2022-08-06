@@ -1,8 +1,8 @@
-import 'package:e_commerce_app/components/default_button.dart';
-import 'package:e_commerce_app/constants.dart';
-import 'package:e_commerce_app/size_config.dart';
-import 'package:flutter/material.dart';
+import '/constants.dart';
+import '/size_config.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:flutter/material.dart';
+import '/components/default_button.dart';
 
 class CheckoutCard extends StatelessWidget {
   const CheckoutCard({Key? key}) : super(key: key);

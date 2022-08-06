@@ -1,5 +1,4 @@
-import 'package:e_commerce_app/constants.dart';
-
+import '/constants.dart';
 import '/size_config.dart';
 import 'sign_in_form.dart';
 import '/components/socal_card.dart';

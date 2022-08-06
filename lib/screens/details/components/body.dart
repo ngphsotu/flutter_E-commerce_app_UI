@@ -1,10 +1,10 @@
-import '../../cart/cart_screen.dart';
 import 'color_dots.dart';
 import '/size_config.dart';
 import 'product_image.dart';
 import '/models/Product.dart';
 import 'product_description.dart';
 import 'top_rounded_container.dart';
+import '../../cart/cart_screen.dart';
 import 'package:flutter/material.dart';
 import '/components/default_button.dart';
 

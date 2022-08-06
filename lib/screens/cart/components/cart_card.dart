@@ -1,6 +1,5 @@
-import 'package:e_commerce_app/constants.dart';
-import 'package:e_commerce_app/size_config.dart';
-
+import '/constants.dart';
+import '/size_config.dart';
 import '/models/Card.dart';
 import 'package:flutter/material.dart';
 

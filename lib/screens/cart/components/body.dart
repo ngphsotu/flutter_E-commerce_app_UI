@@ -1,9 +1,8 @@
-import 'package:e_commerce_app/models/Card.dart';
-import 'package:e_commerce_app/size_config.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
-
 import 'cart_card.dart';
+import '/models/Card.dart';
+import '/size_config.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:flutter/material.dart';
 
 class Body extends StatefulWidget {
   const Body({Key? key}) : super(key: key);

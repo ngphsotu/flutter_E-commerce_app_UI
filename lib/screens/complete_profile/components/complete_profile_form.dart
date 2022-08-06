@@ -2,8 +2,8 @@ import '/constants.dart';
 import '/size_config.dart';
 import '/components/form_error.dart';
 import '/screens/otp/otp_screen.dart';
-import '/components/default_button.dart';
 import 'package:flutter/material.dart';
+import '/components/default_button.dart';
 import '/components/custom_surffix_icon.dart';
 
 class CompleteProfileForm extends StatefulWidget {
